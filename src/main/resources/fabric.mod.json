@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "tcpnodelay",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "TCP No Delay",
+  "description": "Disables TCP Delay",
   "authors": [
-    "Me!"
+    "Notex"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+    "homepage": "https://notex.app/",
+    "sources": "https://github.com/Notexe/TCPNoDelay"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "icon": "assets/tcpnodelay/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "app.notex.tcpnodelay.events.init.InitListener"
     ],
     "stationapi:event_bus_client": [
     ],
@@ -27,7 +27,7 @@
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "tcpnodelay.mixins.json"
   ],
 
   "depends": {
